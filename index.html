@@ -13,6 +13,7 @@ if (!window.localStorage) {
 
 <body>
 <p>test</p>
+<scrip>
 for (var i = 0; i < localStorage.length; i++){
     var key = localStorage.key(i);
     var value = localStorage.getItem(key);
@@ -20,5 +21,6 @@ for (var i = 0; i < localStorage.length; i++){
     element.textContent = `${key}: ${value}`;
     document.body.appendChild(element);
 }
+</scrip>
 </body>
 </html>
