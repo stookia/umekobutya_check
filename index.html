@@ -7,6 +7,12 @@
 if (!window.localStorage) {
   alert("お使いのブラウザはlocalStorageに対応していません。");
 }else{alert("対応済");}
+
+</script>
+</head>
+
+<body>
+<p>test</p>
 for (var i = 0; i < localStorage.length; i++){
     var key = localStorage.key(i);
     var value = localStorage.getItem(key);
@@ -14,10 +20,5 @@ for (var i = 0; i < localStorage.length; i++){
     element.textContent = `${key}: ${value}`;
     document.body.appendChild(element);
 }
-</script>
-</head>
-
-<body>
-<p>test</p>
 </body>
 </html>
