@@ -7,6 +7,13 @@
 if (!window.localStorage) {
   alert("お使いのブラウザはlocalStorageに対応していません。");
 }else{alert("対応済")}
+for (var i = 0; i < localStorage.length; i++){
+    var key = localStorage.key(i);
+    var value = localStorage.getItem(key);
+    var element = document.createElement('p');
+    element.textContent = `${key}: ${value}`;
+    document.body.appendChild(element);
+}
 </script>
 </head>
 
